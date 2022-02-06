@@ -4,6 +4,10 @@
 //     console.log(i);  
 // }
 
+
+
+
+
 // function call inside the function and outside the function
 
 // function consoleNumber(i) {
@@ -13,11 +17,29 @@
 // }
 // consoleNumber(1);
 
+
+
 // difference between i++ and ++i/i+1
 
-function consoleNumber(i) {
-    console.log(i);
+// function consoleNumber(i) {
+//     console.log(i);
     
+//     consoleNumber(i+1);
+// }
+// consoleNumber(1);
+
+
+
+
+
+// recursive function
+
+function consoleNumber(i) {
+    
+    if (i > 5) {
+        return;
+    }
+    console.log(i);
     consoleNumber(i+1);
 }
 consoleNumber(1);
